@@ -1,0 +1,238 @@
+.project{
+    padding-top: 7em;
+    text-align: justify;
+    max-width: 60%;
+    /* justify-content: center; */
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(34%, 0%)!important;
+}
+.project-container {
+    background-color: #EBF0F9;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.img6 {
+    max-width: 5%;
+   }  
+.content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    grid-gap: 20px; /* Adjust the gap between items */
+    padding-left: 9em;
+    padding-right: 9em;
+
+}
+.content-block {
+    display: flex;
+    flex-direction: column;
+}
+.text-content {
+    margin-top: 0px; /* Adjust margin as needed */
+    text-align: justify;
+    padding-left: 2em;
+}
+.img4 {
+    padding-bottom: 4em;
+}
+.cards {
+    max-width: 85%; 
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding-bottom: 4em;
+}
+.card-check {
+    width: 100%; /* Each card takes up full width of grid cell */
+    position: relative;
+}
+.c1 {
+    position: relative;
+    width: 100%; /* Each image container takes up full width of card-check */
+}
+.img7 {
+    width: 100%; /* Image fills its container */
+    height: auto; /* Maintain aspect ratio */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: white;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+.overlay p {
+    font-size: 14px;
+    padding-bottom: 2em;
+}
+.overlay h3 {
+ text-align: justify;
+}
+.button1 {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.overlay-content1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.overlay-content1 h2 {
+    margin-bottom: 20px;
+}
+.overlay-content1 .buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #180E5A;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.button-white {
+    background-color: white;
+}
+.overlay-content1 .buttons button:hover {
+    background-color: #e6e6e6;
+}
+
+
+ /* new css */
+
+.servicce_title_headline{
+    font-size: 50px;
+    margin-top: 1rem;
+    font-weight: 500;
+    margin-bottom: 4rem;  
+}
+.service_title_description{
+    color:  #9a9b9d;
+}
+.service_main_img{
+  margin-top: 3rem; 
+  margin-bottom: 3rem ; 
+}
+.sub_headline{
+    font-size: 28px ;
+    font-weight: 500;
+}
+.sub_headline_desc{
+    color:  #9a9b9d;
+    margin-top: 1rem ;
+    margin-bottom:2rem ;
+    
+}
+@media (520px <= width <= 630px) {
+    .overlay-content1 h2 {
+        font-size: 20px;
+    }
+}
+
+@media (350px <= width <= 519px) {
+    .overlay-content1 h2 {
+        font-size: 17px;
+    }
+}
+@media (929px <= width <= 1100px) {
+    .overlay p {
+        font-size: 12px;
+    }
+    .overlay h2 {
+        font-size: 19px;
+    }
+}
+
+@media (612px <= width <= 722px){
+   
+.cards {
+    max-width: 85%; /* Max width of cards container */
+    margin: 0 auto; /* Center cards container */
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* Responsive grid */
+    gap: 20px; /* Adjust the gap between cards */
+    padding-bottom: 4em;
+}
+
+.card-check {
+    width: 100%; /* Each card takes up full width of grid cell */
+    position: relative;
+}
+
+.c1 {
+    position: relative;
+    width: 100%; /* Each image container takes up full width of card-check */
+}
+
+.img7 {
+    width: 100%; /* Image fills its container */
+    height: auto; /* Maintain aspect ratio */
+} 
+
+.overlay p {
+    font-size: 12px;
+}
+.overlay h2 {
+    font-size: 19px;
+}
+}
+
+@media (480px <= width <= 611px){
+    .cards {
+        max-width: 70%; 
+        margin: 0 auto; 
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+        gap: 20px;
+        padding-bottom: 4em;
+    }
+}
+
+@media (590px <= width <= 800px) {
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+}
+
+@media (350px <= width <= 589px) {
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .text-content p {
+        font-size: 12px;
+    }
+    .text-content h3 {
+        font-size: 15px;
+    }
+
+}

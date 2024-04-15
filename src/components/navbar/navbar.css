@@ -1,0 +1,121 @@
+.Nav {
+
+  padding-left: 40px;
+  padding-right: 40px;
+  background: black ;
+  color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Space items evenly horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.LeftSection {
+  display: flex; /* Arrange logo and text horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.RightSection {
+  display: flex;
+ 
+  gap: 20px; /* Arrange buttons horizontally */
+}
+
+.Logo {
+  display: flex; /* Arrange logo and text horizontally */
+  align-items: center; /* Center items vertically */
+  text-decoration: none; /* Remove underline */
+  color: #ffffff; /* Set text color */
+}
+
+.Logo img {
+  width: 40px; /* Set logo width */
+  height: auto; /* Maintain aspect ratio */
+}
+.text{
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.Buttons {
+  margin-left: 10px; /* Add space between buttons */
+}
+
+.Buttons a {
+  text-decoration: none; /* Remove underline */
+color: #ffffff;
+  transition: color 0.3s; /* Set text color */
+}
+.Buttons a:hover{
+  color: rgb(160, 160, 160);
+}
+
+
+/*oh hover sectionservices */
+.ServicesButton {
+  cursor: pointer;
+}
+.Buttons {
+  position: relative;
+}
+
+.DropdownContent {display: flex;
+  position: absolute;
+  z-index: 5 ;
+  flex-direction: column;
+  width: 250px ;
+text-align: left;
+  margin-right:10rem ;
+  padding: 15px;
+  color: #ffffff;
+ background: #000;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.drop_down_service{
+  color: #ffffff;
+}
+.drop_down_service:hover{
+  color: #000000;
+}
+
+.ServicesButton:hover .DropdownContent {
+  display: block;
+  animation: fadeIn 0.1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.DropdownContent a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.DropdownContent a:hover {
+  background-color: #ffffff;
+  padding: 5px ;
+  border-radius: 5px;
+}
+
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .LeftSection {
+    flex: 1; /* Take up full width on smaller screens */
+  }
+}
